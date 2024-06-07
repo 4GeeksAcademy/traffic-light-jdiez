@@ -1,12 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-style: sans-serif;
+    background-image: url('https://s1.1zoom.me/big0/160/354276-admin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
-/* 
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.semaforo {
+    width: 100px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px 10px 0px 0px
+}
 
-*/
+.bloque-semaforo-celeste {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0 10px 10px
+}
+
+.luz-red {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    background-color: rgba(255, 0, 0);
+    border-radius: 50%;
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+
+
+}
+
+.luz-yellow {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+
+}
+
+.luz-green {
+    position: absolute;
+    bottom: 12px;
+    left: 0px;
+    background-color: rgba(59, 207, 0);
+    border-radius: 50%;
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+
+}
+
+.luz-celeste {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 50%;
+    filter: blur(5px);
+    width: 100px;
+    height: 85px;
+    z-index: -1;
+
+}
+
+.btn-primary{
+    filter: drop-shadow(0 0 15px #000)
+}
